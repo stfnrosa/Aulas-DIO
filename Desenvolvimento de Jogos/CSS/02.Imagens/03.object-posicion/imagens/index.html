@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+    <style>
+    body{
+        background-color: peachpuff;
+    }
+    div.img{
+        width: 200px;
+        height: 300px;
+        border: 5px solid blue;
+    }
+    img{
+        width:100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    #positionPX{
+        object-position: 30px 50px;
+    }
+    #positionDirection{
+        object-position: right;
+    }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>object-position</code></h1>
+    <div>
+        <pre>
+        <code>object-fit:cover;</code> 
+        <code>object-position:30px 50px;</code>: representa a posição relativa ao eixo x e y.
+        </pre>
+            <div class="img">
+                <img src="cavalooo.jpg" alt="" id="positionPX">
+            </div>
+    </div>
+    <div>
+        <pre>
+        <code>object-fit:cover;</code> 
+        <code>object-position:right;</code>
+        </pre>
+            <div class="img">
+                <img src="cavalooo.jpg" alt="" id="positionDirection">
+            </div>
+    </div>    
+</body>
+</html>

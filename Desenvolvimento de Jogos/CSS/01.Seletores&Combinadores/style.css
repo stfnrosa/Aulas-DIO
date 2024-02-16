@@ -1,0 +1,63 @@
+/*selecionando pela tag ou tipo*/
+footer{ 
+    text-align: center;
+    font-style: italic;
+}
+/*selecionando pelo ID(#)*/
+#course-content{
+    color:cadetblue;
+}
+/*selecionando pelo atributo class=titulos(.) usado para estilizar apenas os titulos da pagina*/
+.titulo{
+    color:rgba(137, 43, 226, 0.473);
+}
+/*selecionando todos elementos(*)*/
+*{
+    margin-left: 10px;
+}
+
+/*selecionando pelo ATRIBUTO em todos os links da pagina*/
+a {
+    background-color: silver;
+    }
+/*selecionando pelo atributo EXATO*/
+a[href="valor"]{
+    color: rgb(255, 115, 0);
+    } 
+  /* com o valor e um INTERVALO podendo seguir de outras palavras */
+  a[href~="intervalo"] {
+    color: rgb(157, 255, 0);
+  } 
+  /* com o valor e um intervalo podendo seguir de um HIFEN */
+  a[href|="intervalo"] {
+    color: rgb(0, 255, 242);
+  }  
+  /* Links internos, começando com PREFIXO "pre" */
+  a[href^="pre"] {
+    color: gold;
+  }
+  /* Links com final o SUFIXO ".org" */
+  a[href$=".org"] {
+    color: red;
+  }  
+  /* Links com "&" em QUALQUER POSIÇÃO da URL */
+  a[href*="&"] {
+    color: rgb(255, 0, 242);
+  }
+/* Combinadores são usados para explicar a relação entre os seletores */
+/* DESCENDENTES: [seletor][espaço][seletor] */
+header button{
+    background-color: rgb(124, 124, 248);
+}
+/* FILHO: [seletor][>][seletor] */
+section>p{
+    background-color: rgba(219, 124, 248, 0.473);
+}
+/* IRMÃO ADJACENTE: [seletor][+][seletor] */
+section+section{
+    background-color: rgba(124, 248, 227, 0.473);
+}
+/* IRMÃO GERAL: [seletor][~][seletor] */
+span~span{
+    background-color: rgba(124, 126, 248, 0.473);
+}

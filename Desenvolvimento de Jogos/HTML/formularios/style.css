@@ -1,0 +1,90 @@
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    text-align: center;
+} 
+.row{
+    margin: 5px;
+}
+.campoText{
+    background-color: rgb(228, 182, 255);
+    border: 0;
+    padding: 15px;
+    color: #fff;
+    border-radius: 15px;
+    text-indent: 1px;    
+}
+.campoFile{
+    background-color: rgb(228, 182, 255);
+    border: 0;
+    padding: 15px;
+    color: #fff;
+    border-radius: 15px;
+    text-indent: 1px;
+
+}
+input{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.grupo{
+    text-align: center;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: sans-serif;
+    color: #380B61;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color: #380B61;
+}
+
+fieldset {
+    border: 0;
+    font-size: 20px;
+    
+}
+
+button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}

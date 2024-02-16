@@ -1,0 +1,37 @@
+div {
+    font-size: 28px;
+}
+
+
+#norma {
+    font-style: normal;
+}
+#italic {
+    font-style: italic;
+}
+#oblique {
+    font-style: oblique;
+}
+
+#wigth-normal {
+    font-weight: normal;
+}
+#bold {
+    font-weight: bold;
+}
+
+#variante-normal {
+    font-variant: normal;
+}
+#small-caps {
+    font-variant: small-caps;
+}
+#height-nomal {
+    line-height: normal;
+}
+#num {
+    line-height: 200%;
+}
+#resumido {
+    font: italic small-caps bold 24px/2 Georgia;
+}

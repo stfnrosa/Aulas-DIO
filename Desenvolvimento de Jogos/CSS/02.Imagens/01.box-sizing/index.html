@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens</title>
+    <link rel="stylesheet" href="assets/style.css"
+</head>
+<body>
+    <div id="objeto1">box-sizing: content-box; tamanho = largura+padding+border 
+        <pre>Exemplos:
+        <code>objeto1{
+        margin:20px;
+        boder:4px;
+        padding:10px;
+        height:300px;
+        width:300px;
+        <mark>box-sizing:content-box;</mark>
+        }
+        tamanho = largura 300px + 
+        padding 10 left e 10 right +
+        boder 4 left e 4 right = 328px; </code></pre>
+    </div>    
+    <div id="objeto2">box-sizing: border-box; largura = tamanho-padding-border 
+        <pre>Exemplos:
+        <code>objeto2{
+        margin:20px;
+        boder:4px;
+        padding:10px;
+        height:300px;
+        width:300px;
+        <mark>box-sizing:border-box;</mark>
+        }
+        largura = tamanho 300px - 
+        padding 10 left e 10 right -
+        boder 4 left e 4 right = 272px; </code></pre>
+    </div>
+</body>
+</html>

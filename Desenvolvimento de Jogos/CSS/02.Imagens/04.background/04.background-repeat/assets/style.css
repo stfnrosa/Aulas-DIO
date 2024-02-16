@@ -1,0 +1,28 @@
+div{
+    width: 450px;
+    height: 450px;
+    background-image: url(/imagens/icon2.jpg);
+    background-size: 120px;
+    border: 5px solid red;
+}
+#exemplo1{
+    background-repeat: repeat;
+}
+#exemplo2{
+    background-repeat: repeat-x;
+}
+#exemplo3{
+    background-repeat: repeat-y;
+}
+#exemplo4{
+    background-repeat: space;
+}
+#exemplo5{
+    background-repeat: round;
+}
+#exemplo6{
+    background-repeat: no-repeat;
+}
+#exemplo7{
+    background-repeat: space round;
+}

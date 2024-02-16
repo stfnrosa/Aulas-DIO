@@ -1,0 +1,20 @@
+div{
+    width: 450px;
+    height: 450px;
+}
+#exemplo1{
+    background-image: linear-gradient(lightpink,palevioletred,purple);
+}
+#exemplo2{
+    background-image: radial-gradient(lightpink,palevioletred,purple);
+}
+#exemplo3{
+    background-image: repeating-linear-gradient(to top,palevioletred 0 20px,lightpink 20px 40px, purple 40px 60px);
+}
+#exemplo4{
+    background-image:url(../../imagens/star.png),url(../../imagens/cafe.jpg);
+}
+#exemplo5{
+    background-image:url(../../imagens/star.png),repeating-linear-gradient(to top,lightblue 0 20px,lightpink 20px 40px)
+
+}

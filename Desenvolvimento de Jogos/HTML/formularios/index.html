@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Paciente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com título e subtítulo -->
+    <div>
+        <h1 id="titulo">Agendamento de consultas</h1>
+        <p id="subtitulo">Complete as informações do paciente!</p>
+    </div>
+    <!--Início do formulário-->
+    <form action="#">
+
+        <fieldset class="grupo">
+            <legend>Dados Pessoais</legend>
+            <div class="row">            
+                <input type="text" class="campoText" name="nome" id="nome" placeholder="Nome Completo" required>
+                <input type="text" class="campoText" name="cpf" id="cpf" placeholder="CPF" required>
+            </div>
+            <div class="grupo">
+                <label for="data">Nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+            <div class="row">
+                <input type="text"  class="campoText" name="email" id="email" style="width: 500px;" placeholder="E-mail" required>
+            </div>
+            <div class="row">
+                <input type="text" class="campoText" name="ddd" id="ddd" max="99" min="0" style="width: 40px;" width="10" placeholder="DDD" required>
+                <input type="text" class="campoText" name="celular" id="celular" placeholder="Telefone/Celular"required>
+            </div>
+                <label>Whatsapp:</label>
+                <input type="radio" name="contato" id="contato"
+                value="sim" checked>Sim
+                <input type="radio" name="contato" id="contato" value="não">Não
+            </div>
+        </fieldset>
+    </form>
+    <div id="agendamento">
+        <h2 id="titulo">Agendamento</h2>
+        <p id="subtitulo">São mais de 20 especialidades, disponíveis para agendamento!<br>
+        Preencha os campos abaixo e agende agora mesmo</p>
+    </div>
+    <form action="#">
+    </fieldset>
+    <fieldset class="grupo">
+        <legend>Localização</legend>
+        <div class="row">
+            <input type="text" class="campoText" name="cidade" id="cidade" placeholder="Cidade/UF" required>
+            <input type="text" class="campoText" name="bairro" id="bairro" placeholder="Bairro" required>
+        </div>
+        <div class="row">
+            <input type="text" class="campoText" name="endereço" id="endereço" style="width: 400px;" placeholder="Endereço" required>
+            <input type="text" class="campoText" name="numCasa" id="numCasa" style="width: 30px;" width="10" placeholder="Nº" required>
+        </div>
+        <div class="row">
+            <label for="distancia">Distância:</label>
+            <span id="minDistancia" class="valor-distancia">5Km</span>
+            <input type="range" name="distancia" id="distancia" min="5" max="50" step="5">
+            <span id="maxDistancia" class="valor-distancia">50Km</span>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Nossas Especialidades</legend>
+        <label>Selecionar Especialidade:</label>
+        <select class="campoText" name="distancia" id="distancia" style="width: 500px;">
+            <option value="">Selecione</option>
+            <option value="cardiologia">Cardiologia</option>
+            <option value="clinica geral">Clínica Geral</option>
+            <option value="dermatologia">Dermatologia</option>
+            <option value="endocrinologia">Endocrinologia</option>
+            <option value="ginecologia">Ginecologia</option>
+            <option value="oftalmologia">Oftalmologia</option>
+            <option value="urulogia">Urulogia</option>         
+        </select>        
+    </fieldset>
+    <div class="campo">
+        <br>
+        <label for="experiencia"><strong>Conte um pouco mais sobre como podemos te ajudar: </strong></label>
+        <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+    </div>
+    <div>
+        <strong>Você Gostaria de enviar algum arquivo para o profissional de saúde?</strong><br>
+        <span>Ex: Resultado de exames, laudos e etc?</span><br>
+        <input type="file" class="campoFile" name="arquivos" id="arquivos"multiple><br>
+        <span>Os arquivos aceitos devem ser de foto, .pdf, .doc ou .docx</span><br>
+        <input type="checkbox" name="termos" id="termos" required>Li e aceito os termos de uso.
+    </div>
+    <!-- Botão para enviar o formulário -->
+    <button class="botao" type="submit" onsubmit="">Concluído</button>       
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+div{
+    margin-bottom: 30px;
+}
+.exemplo{
+    width: 500px;
+    height: 300px;
+    background-image: url(../../imagens/icon2.jpg);
+}
+#cover{
+    background-size: cover;
+}
+#contain{
+    background-size: contain;
+}
+#exemplo-x-y{
+    background-size: 50px 50px;
+}
+#exemplo-camadas{
+    width: 500px;
+    height: 300px;
+    background-image: url(../../imagens/star.png),url(../../imagens/icon2.jpg);
+    background-size: cover , 50px 50px;
+}

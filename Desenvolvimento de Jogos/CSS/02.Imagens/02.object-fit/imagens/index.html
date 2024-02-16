@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+    <style>
+        body{
+            background-color: peachpuff;
+        }
+        div.img{
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+        img{
+            width:100%;
+            height: 100%;
+        }
+        #fill{
+            object-fit: fill;
+        }
+        #contain{
+            object-fit: contain;
+        }
+        #cover{
+            object-fit: cover;
+        }
+        #none{
+            object-fit: none;
+        }
+        #scale-down{
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedades <code>object-fit</code></h1>
+    <p>especifica como uma imagem deve ser redimensinada para se ajustar ao container. Para que o ajuste seja feito, se será necssario que ela seja redimensionada ou que as proporções seejam mantidas</p>
+    <div>
+        <code>object-fit:fill;</code> (padrão):   
+        redimensionado para o tamanho do container IGNORANDO A PROPORÇÃO da imagem.
+        <div class="img">
+            <img src="cavalooo.jpg" alt="fill" id="fill">
+        </div>
+    </div>
+    <div>
+        <code>object-fit:contain;</code> (não redimensiona): RESPEITA A PROPORÇÃO da imagem para caber no container mas não é redimensionada.
+        <div class="img">
+            <img src="cavalooo.jpg" alt="contain" id="contain">
+        </div>
+    </div>
+    <div>
+        <code>object-fit:cover;</code> (não redimensiona): preenche todo o conteiner sem ser redimensionada e RESPEITA A PROPORÇÃO, caso seja mais extensa que o proprio container será cortada.
+        <div class="img">
+            <img src="cavalooo.jpg" alt="cover" id="cover">
+        </div>
+    </div>
+    <div>
+        <code>object-fit:none;</code> (não redimensiona): mantem o tamanho original da imagem e ignorando o tamanho(altura/largura) do elemento pai, mas quando o container for menor, pode ser cortada.
+        <div class="img">
+            <img src="cavalooo.jpg" alt="none" id="none">
+        </div>
+    </div>
+    <div>
+        <code>object-fit:scale-down;</code> (não redimensiona): escolhe entre <code>object-fit:contain;</code> e <code>object-fit:none;</code> o que resultara em um tamanho menor de objeto concreto.
+        <div class="img">
+            <img src="cavalooo.jpg" alt="scale-down" id="scale-down">
+        </div>
+    </div>
+</body>
+</html>
